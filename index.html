@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" href="Flip-Card.css">
+        <link rel="shortcut icon" type="image/x-icon" href="">
+        <title>БОТ МАФИЯ</title>
+        <script src="Flip-Card-dist.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="main-block">
+                <div class="container container_1">
+                    <div class="main-block__shopping-cart">
+                        <h1>БОТ МАФИЯ</h1>
+                        <div class="tabs">
+                            <input type="radio" name="tab-btn" id="btn1-id" value="" checked>
+                            <input type="radio" name="tab-btn" id="btn2-id" value="">
+                            <div class="tabs__labels">
+                                <label class="labels__buy" for="btn1-id">Покупка кальция</label>
+                                <label class="labels__coupon" for="btn2-id">Ввод купона</label>
+                            </div>
+                            <div class="tabs__buy-content flip-cards">
+                                <div class="flip-cards__form flip-card">
+                                    <input class="form__user-name buy-name" type="text" name="" value="" placeholder="Ссылка / id / короткое имя">
+                                    <span class="buy-name-error">Пользователь введен некорректно</span>
+                                    <input class="form__sum buy-sum" type="text" name="" value="" placeholder="Сумма кальция">
+                                    <span class="buy-sum-error">Сумма кальция введена некорректно</span>
+                                    <div class="form__terms">
+                                        <input class="terms__checkbox" type="checkbox" id="checkbox-id" name="">
+                                        <label class="terms__text" for="checkbox-id">Я принимаю условия Пользовательского соглашения</label>
+                                    </div>
+                                    <button class="flip-card__button buy-next-btn">Далее</button>
+                                </div>
+                                <div class="flip-cards__pay flip-card">
+                                    <p class="pay__data-confirmation">Подтверждение данных</p>
+                                    <div class="pay__data">
+                                        <p>Бот: <span>Мафия</span></p>
+                                        <p>Игрок: <span>Андрей Севастьянов</span></p>
+                                        <p>Товар: <span>1000 грамм кальция</span></p>
+                                    </div>
+                                    <p class="pay__purchase">К зачислению: 1000 грамм кальция</p>
+                                    <p class="pay__spending">К оплате: 100 рублей</p>
+                                    <button class="flip-card__button buy-pay-btn">Оплатить</button>
+                                    <div class="flip-card__back buy-back-btn">
+                                        <img src="Flip-Card_img/arrow.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="flip-cards__buy-success flip-card">
+                                    <p>Покупка произведена успешно</p>
+                                    <div class="success__checkmark">
+                                        <img src="Flip-Card_img/checkmark-success.svg" alt="">
+                                    </div>
+                                    <div class="flip-card__back buy-back-btn">
+                                        <img src="Flip-Card_img/arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__coupon-content flip-cards">
+                                <div class="flip-cards__form flip-card">
+                                    <input class="form__user-name coupon-name" type="text" name="" value="" placeholder="Ссылка / id / короткое имя">
+                                    <span class="coupon-name-error">Пользователь введен некорректно</span>
+                                    <input class="form__sum coupon-sum" type="text" name="" value="" placeholder="Промокод">
+                                    <span class="coupon-sum-error">Промокод введен некорректно</span>
+                                    <div class="form__terms">
+                                        <input class="terms__checkbox" type="checkbox" id="checkbox2-id" name="">
+                                        <label class="terms__text" for="checkbox2-id">Я принимаю условия Пользовательского соглашения</label>
+                                    </div>
+                                    <button class="flip-card__button coupon-next-btn">Далее</button>
+                                </div>
+                                <div class="flip-cards__coupon-success flip-card">
+                                    <p><span>Промокод ABCDEFG</span> успешно активирован</p>
+                                    <div class="success__checkmark">
+                                        <img src="Flip-Card_img/checkmark-success.svg" alt="">
+                                    </div>
+                                    <div class="flip-card__back coupon-back-btn">
+                                        <img src="Flip-Card_img/arrow.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-block__images">
+                        <div class="images__shadow"></div>
+                        <picture>
+                            <source srcset="Flip-Card_img/person-left.webp" type="image/webp">
+                            <img class="images__left" src="Flip-Card_img/person-left.png" alt="">
+                        </picture>
+                        <picture>
+                            <source srcset="Flip-Card_img/person-right.webp" type="image/webp">
+                            <img class="images__right" src="Flip-Card_img/person-right.png" alt="">
+                        </picture>
+                        <picture>
+                            <source srcset="Flip-Card_img/person-center.webp" type="image/webp">
+                            <img class="images__center" src="Flip-Card_img/person-center.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="footer__links">
+                        <div>
+                            <a href="" target="_blank">Описание товара</a>
+                            <a href="" target="_blank">Контакты</a>
+                        </div>
+                        <div>
+                            <a href="" target="_blank">Политика конфиденциальности</a>
+                            <a href="" target="_blank">Пользовательское соглашение</a>
+                        </div>
+                    </div>
+                    <p class="footer__copyright">
+                        «Kostik Bots» © 2019 - 2023
+                        <br>ИП Севастьянов Андрей Сергеевич
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
